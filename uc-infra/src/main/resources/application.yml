@@ -1,0 +1,12 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: user
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.11.11.111:8848
+dubbo:
+  scan:
+    base-packages: cloud.ffeng.user
